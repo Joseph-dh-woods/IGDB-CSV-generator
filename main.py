@@ -23,11 +23,11 @@ rows = worksheet.get_all_values()
 for x in rows:
   IDlist.append(x[0])
   
-  getToken = requests.post("https://id.twitch.tv/oauth2/token?client_id=p4drjdnuirwnzc9i1rs74fv8sdhtbi&client_secret=51ez2706qa9f957aqypha41cdzgxxs&grant_type=client_credentials")
+  getToken = requests.post("https://id.twitch.tv/oauth2/token?client_id= IDHERE &client_secret= SECRETHERE &grant_type=client_credentials")
 s = getToken.text
 sI = s.split("\"")
 accessToken = sI[3]
-accessID = "p4drjdnuirwnzc9i1rs74fv8sdhtbi"
+accessID = "YOUR ACCESS ID"
 wrapper = IGDBWrapper(accessID, accessToken)
 games = []
 for ID in IDlist:
