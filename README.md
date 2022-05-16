@@ -1,3 +1,1 @@
-This project is still in development, and is currently not finished,
-requires the IGDB api, and must be run in google colab
-Full readme to come when project is functional
+This will fill out a google sheets page with the basic information about a list of games from IGDB, just open the IPYNB in colab and follow the included instructions
